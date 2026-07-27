@@ -30,7 +30,7 @@ dev = [
   "editables==0.5",
   "hatchling==1.27.0",
   "mypy==1.17.1",
-  "pip-audit==2.9.0",
+  "pip-audit==2.10.1",
   "pip-tools==7.5.0",
   "pywin32-ctypes==0.2.3; sys_platform == 'win32'",
   "pytest==9.0.3",
