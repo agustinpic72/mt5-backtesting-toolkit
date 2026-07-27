@@ -229,6 +229,10 @@ click==8.4.2 \
     --hash=sha256:9a6cea6e60b17ebe0a44c5cc636d94f09bd66142c1cd7d8b4cd731c4917a15f6 \
     --hash=sha256:e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76
     # via pip-tools
+colorama==0.4.6 \
+    --hash=sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44 \
+    --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
+    # via mt5-backtesting-toolkit (pyproject.toml)
 coverage==7.15.2 \
     --hash=sha256:075560438765b7a2ef43bf7aa7758661b53d889df47f062a31bda6c1ade553a2 \
     --hash=sha256:0901cfe6c13bcd2302da4f83e884555d2a22bda6e4c476f09ef204ba20ca536e \
@@ -797,6 +801,10 @@ pytest==9.0.3 \
 pytest-cov==6.2.1 \
     --hash=sha256:25cc6cc0a5358204b8108ecedc51a9b57b34cc6b8c967cc2c01a4e00d8a67da2 \
     --hash=sha256:f5bc4c23f42f1cdd23c70b1dab1bbaef4fc505ba950d53e0081d0730dd7e86d5
+    # via mt5-backtesting-toolkit (pyproject.toml)
+pywin32-ctypes==0.2.3 \
+    --hash=sha256:8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8 \
+    --hash=sha256:d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755
     # via mt5-backtesting-toolkit (pyproject.toml)
 pyyaml==6.0.3 \
     --hash=sha256:00c4bdeba853cc34e7dd471f16b4114f4162dc03e6b7afcc2128711f0eca823c \
