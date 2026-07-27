@@ -33,7 +33,7 @@ dev = [
   "pip-audit==2.10.1",
   "pip-tools==7.6.0",
   "pywin32-ctypes==0.2.3; sys_platform == 'win32'",
-  "pytest==9.0.3",
+  "pytest==9.1.1",
   "pytest-cov==6.2.1",
   "ruff==0.12.7",
   "twine==6.2.0",
