@@ -1,0 +1,22 @@
+schema_version: "1"
+experiment_id: synthetic-grid
+strategy_id: SYNTHETIC_EXAMPLE
+symbol: SYNTH_A
+account_label: DEMO-001
+timeframe: M15
+date_range:
+  start: 2024-01-01
+  end: 2024-01-31
+execution_mode: grid
+timeout_seconds: 30
+retry:
+  max_attempts: 2
+  backoff_seconds: 0
+parameters:
+  fixed:
+    param_fixed: 10
+  grid:
+    param_a: [1, 2]
+    param_b: [alpha, beta]
+combination_limit: 8
+output_directory: outputs/synthetic-grid

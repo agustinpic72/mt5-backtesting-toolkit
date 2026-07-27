@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mt5-backtesting-toolkit"
+version = "0.1.0"
+description = "Sanitized Python toolkit for reproducible MetaTrader 5 backtest experiments."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "Apache-2.0" }
+authors = [{ name = "agustinpic72" }]
+keywords = ["backtesting", "metatrader5", "testing", "reporting"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3.12",
+  "Typing :: Typed",
+]
+dependencies = [
+  "defusedxml>=0.7.1,<0.8",
+  "pydantic>=2.11.7,<3",
+  "PyYAML>=6.0.2,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build==1.2.2.post1",
+  "hatchling==1.27.0",
+  "mypy==1.17.1",
+  "pip-audit==2.9.0",
+  "pip-tools==7.5.0",
+  "pytest==9.0.3",
+  "pytest-cov==6.2.1",
+  "ruff==0.12.7",
+  "twine==6.1.0",
+  "types-defusedxml==0.7.0.20260504",
+  "types-PyYAML==6.0.12.20250516",
+]
+
+[project.scripts]
+mt5bt = "mt5_backtesting_toolkit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mt5_backtesting_toolkit"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --strict-config"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["mt5_backtesting_toolkit"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF", "S"]
+ignore = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["mt5_backtesting_toolkit"]

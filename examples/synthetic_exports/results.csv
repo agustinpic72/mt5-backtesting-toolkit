@@ -1,0 +1,4 @@
+# Synthetic test data - not investment performance.
+run_id,status,duration_ms,trade_count,max_drawdown_pct,profit_factor,sharpe_like
+SYN-EXAMPLE-001,success,125,12,2.50,1.40,0.75
+SYN-EXAMPLE-002,success,150,15,2.10,1.55,0.82

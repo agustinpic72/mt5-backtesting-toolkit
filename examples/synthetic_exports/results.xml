@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<synthetic-results schema_version="1"
+  disclaimer="Synthetic test data - not investment performance.">
+  <result run_id="SYN-EXAMPLE-001" status="success" duration_ms="125"
+    trade_count="12" max_drawdown_pct="2.50" profit_factor="1.40" sharpe_like="0.75" />
+  <result run_id="SYN-EXAMPLE-002" status="success" duration_ms="150"
+    trade_count="15" max_drawdown_pct="2.10" profit_factor="1.55" sharpe_like="0.82" />
+</synthetic-results>
