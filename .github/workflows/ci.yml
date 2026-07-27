@@ -91,7 +91,7 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Build and inspect
         run: |
-          python -m pip install build==1.2.2.post1 twine==6.1.0
+          python -m pip install build==1.2.2.post1 twine==6.2.0
           python -m build
           twine check dist/*
       - name: Installed-wheel smoke
