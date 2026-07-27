@@ -34,6 +34,7 @@ def test_synthetic_exports_are_unmistakably_marked() -> None:
     assert offenders == []
 
 
-def test_private_release_gate_is_ignored() -> None:
+def test_local_audit_reports_are_ignored() -> None:
     gitignore = (Path(__file__).parents[1] / ".gitignore").read_text(encoding="utf-8")
     assert "audit/private_release_gate/" in gitignore
+    assert "audit/publication_execution/" in gitignore
