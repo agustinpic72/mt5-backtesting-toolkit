@@ -11,3 +11,4 @@ dist/
 *.egg-info/
 .env
 audit/private_release_gate/
+audit/publication_execution/
