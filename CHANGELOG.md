@@ -2,7 +2,7 @@
 
 All notable changes are recorded here.
 
-## 0.1.0 - Unreleased
+## 0.1.0 - 2026-07-27
 
 - Added strict versioned manifests and workspace-confined path validation.
 - Added deterministic fake success, failure, timeout, and retry workflows.
